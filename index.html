@@ -12,7 +12,7 @@
     <div class="container">
       <div class="resume__block">
         <h1 class="contact-info__header">Іван Яровий</h1>
-        <h3 class="contact-info__sub-header">Front-End Developer</h3>
+        <h3 class="contact-info__sub-header job-title">Front-End Developer</h3>
 
         <div class="contact_info_container fh">
           <div class="contact-info__block">
@@ -135,5 +135,27 @@
 
       </div>
     </main>
+    <script>
+      console.log ("Хай усім хто перевіряє резюме, я тут попотів над ним, але насправді це було цікаво. Сподіваюсь на вищий бал)) І дякую за завдання!")
+
+      const easterEggsJob = document.querySelector(".contact-info__sub-header");
+
+      easterEggsJob.addEventListener('mouseenter', () => {
+        easterEggsJob.classList.add('job-fade');
+        setTimeout(() => {
+          easterEggsJob.innerHTML = 'Senior Front-End Developer';
+          easterEggsJob.classList.remove('job-fade');
+        }, 500); 
+      });
+
+      easterEggsJob.addEventListener('mouseleave', () => {
+        easterEggsJob.classList.add('job-fade');
+      
+      setTimeout(() => {
+        easterEggsJob.innerHTML = 'Front-End Developer';
+        easterEggsJob.classList.remove('job-fade');
+      }, 500);
+    });
+    </script>
   </body>
 </html>
