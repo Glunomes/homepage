@@ -99,6 +99,27 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  transition: all  0.3s ease;  
+}
+
+.contact-info__item:hover {
+  transform: scale(1.05);
+}
+
+.city-name-block:hover {
+  color: yellowgreen;
+}
+
+.linkedIn-block:hover {
+  color: #0077B5;
+}
+
+.email-block:hover {
+  color:red;
+}
+
+.phone-number-block:hover {
+  color: #FF5B04; 
 }
 
 .contact-info__item:not(:last-child) {
@@ -128,7 +149,15 @@ body {
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
+  transition: transform 0.4s ease,box-shadow 0.4s ease;
 }
+
+.contact-info__avatar:hover {
+  transform: scale(1.55);
+  border-width: 5px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .intro {
   display: flex;
   justify-content: start;
